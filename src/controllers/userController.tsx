@@ -67,7 +67,6 @@ export const getUser = async (c: Context) => {
         user,
       });
     } catch (err) {
-      console.log("error in catch of signup controller");
       return c.json({ message: "something went wrong" });
     }
   }
